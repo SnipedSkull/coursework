@@ -6,6 +6,38 @@
     <title>Home</title>
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/slogo.png">
+    <style>
+    .product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.product-card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+.product-image {
+  width: 100%;
+  border-radius: 5px;
+}
+.product-name {
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+  color: black;
+}
+.product-price {
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  color: black;
+}
+
+    </style>
   </head>
   <body>
     <!-- Navigation bar-->
@@ -55,27 +87,27 @@
     });
   });
 </script>
-<div style="display: flex; justify-content: center; gap: 20px; padding: 30px; margin-bottom: 30px;">
- <a href="./webpages/product.html" title="Product 1" style="background: white; padding: 20px; width: 250px; border-radius: 5px; text-align: center; display: block;">
-    <img src="./images/chopsticks.jpg" alt="Product 1" style="width: 100%; border-radius: 5px;">
-    <div style="font-weight: bold; margin: 15px 0 5px 0; color: black;">Product 1 Name</div>
-    <div style="font-weight: bold; margin: 10px 0 0 0; color: black;">Npr 250</div>
-  </a>
- <a href="./webpages/product.html" title="Product 2" style="background: white; padding: 20px; width: 250px; border-radius: 5px; text-align: center; display: block;">
-    <img src="./images/bags.jpg" alt="Product 2" style="width: 100%; border-radius: 5px;">
-    <div style="font-weight: bold; margin: 15px 0 5px 0; color: black;">Product 2 Name</div>
-    <div style="font-weight: bold; margin: 10px 0 0 0; color: black;">Npr 500</div>
-  </a>
- <a href="./webpages/product.html" title="Product 3" style="background: white; padding: 20px; width: 250px; border-radius: 5px; text-align: center; display: block;">
-    <img src="./images/basket.jpg" alt="Product 3" style="width: 100%; border-radius: 5px;">
-    <div style="font-weight: bold; margin: 15px 0 5px 0; color: black;">Product 3 Name</div>
-    <div style="font-weight: bold; margin: 10px 0 0 0; color: black;">Npr 1250</div>
-  </a>
-  <a href="./webpages/product.html" title="Product 4" style="background: white; padding: 20px; width: 250px; border-radius: 5px; text-align: center; display: block;">
-    <img src="./images/Cocopeat.jpg" alt="Product 4" style="width: 100%; border-radius: 5px;">
-    <div style="font-weight: bold; margin: 15px 0 5px 0; color: black;">Product 4 Name</div>
-    <div style="font-weight: bold; margin: 10px 0 0 0; color: black;">Npr 1500</div>
-  </a>
+<div class="product-list">
+  <a href="./webpages/product.html" title="Product 1" class="product-card">
+     <img src="./images/chopsticks.jpg" alt="Product 1" class="product-image">
+     <div class="product-name">Chopsticks</div>
+     <div class="product-price">Npr 250</div>
+   </a>
+  <a href="./webpages/product.html" title="Product 2" class="product-card">
+     <img src="./images/bags.jpg" alt="Product 2" class="product-image">
+     <div class="product-name">Bags</div>
+     <div class="product-price">Npr 500</div>
+   </a>
+  <a href="./webpages/product.html" title="Product 3" class="product-card">
+     <img src="./images/basket.jpg" alt="Product 3" class="product-image">
+     <div class="product-name">Basket</div>
+     <div class="product-price">Npr 1250</div>
+   </a>
+   <a href="./webpages/product.html" title="Product 4" class="product-card">
+     <img src="./images/Cocopeat.jpg" alt="Product 4" class="product-image">
+     <div class="product-name">Cocopeat</div>
+     <div class="product-price">Npr 1500</div>
+   </a>
 </div>
 <br><br>
 <div style="display: flex; gap: 15px; justify-content: center;">
