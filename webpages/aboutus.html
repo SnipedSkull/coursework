@@ -47,14 +47,15 @@ body {
 }
 
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 35px;
+  display: flex;
+  flex-wrap: wrap;     
+  gap: 35px;           
+  justify-content: center;
   max-width: 1200px;
   margin: auto;
 }
-
 .team-card {
+  width: 260px;        
   background: white;
   padding: 30px 25px;
   border-radius: 18px;
