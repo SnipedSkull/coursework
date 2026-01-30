@@ -32,6 +32,22 @@
     text-align: center  ;
     }
 
+/* video banner styling */
+.video-banner {
+  width: 100%;
+  overflow: hidden;
+  border-top: 4px solid #2e7d32;
+  border-bottom: 4px solid #2e7d32;
+  margin: 32px 0;
+  background: #eafbe7;
+}
+/* video element styling */
+.full-video {
+  width: 100%;
+  height: 60vh;
+  display: block;
+  object-fit: cover; 
+}
 
     /* Product list container: flex layout, centered, with spacing */
 
@@ -77,28 +93,32 @@
 
     /* Product name styling */
     .product-name {
+  font-size: 22px;
+  font-weight: 900;
+  color: #145c32;         
+  letter-spacing: 0.6px;
+  margin-bottom: 8px;
+  font-family: "Segoe UI", Arial, sans-serif;
 
-    font-size: 20px;
-    font-weight: 700;
-    color: #1b5e20;
-    letter-spacing: 0.5px;
-    margin-bottom: 6px;
-    font-family: "Segoe UI", Arial, sans-serif;
 
     }
 
     /* Product product-price styling */
     .product-price {
-    color: red;
-    font-weight: 600;
-    margin: 25px 0 30px;
+     color: #c62828;                
+  font-weight: 800;
+  font-size: 16px;
+  margin: 6px 0 2px;
+  font-family: "Segoe UI", Arial, sans-serif;
     }
 
     .product-old-price {
-    text-decoration: line-through;
-    color: black;
-    font-weight: 600;
-    margin: 25px 0 30px;;
+     color: #6b7280;                 
+  text-decoration: line-through;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-family: "Segoe UI", Arial, sans-serif;
 
     }
 
@@ -201,30 +221,23 @@
       </a>
       <ul class="nav-list"> <!-- Navigation links list -->
         <li><a href="./index.html" class="nav-link">Home</a></li>
-        <li><a href="./webpages/product.html" target="_blank" class="nav-link">Product</a></li>
-        <li><a href="./webpages/research.html" target="_blank" class="nav-link">Research</a></li>
-        <li><a href="./webpages/blog.html" target="_blank" class="nav-link">Blog</a></li>
+        <li><a href="./webpages/product.html" class="nav-link">Product</a></li>
+        <li><a href="./webpages/research.html" class="nav-link">Research</a></li>
+        <li><a href="./webpages/blog.html" class="nav-link">Blog</a></li>
         <li class="dropdown"> <!-- Dropdown menu for more links -->
           <a href="#" onclick="return false;" class="nav-link">More</a>
           <ul class="dropdown-menu">
-            <li><a href="./webpages/contact.html" target="_blank" class="dropdown-link">Contact</a></li>
-            <li><a href="./webpages/aboutus.html" target="_blank" class="dropdown-link">About</a></li>
+            <li><a href="./webpages/contact.html" class="dropdown-link">Contact</a></li>
+            <li><a href="./webpages/aboutus.html" class="dropdown-link">About</a></li>
           </ul>
         </li>
       </ul>
     </nav>
-    <div style="border-top: 4px solid #2e7d32; border-bottom: 4px solid #2e7d32; width: 100%; margin: 32px 0; display: flex; justify-content: center; align-items: center; background: #eafbe7;">
-      <video
-        style="width: 75vw; max-width: 75%; height: 42vw; max-height: 420px;"
-        src="./videos/gogreen.mp4"
-        title="Go Green, Your Way!"
-        autoplay
-        muted
-        loop
-        playsinline>
-        Your browser does not support the video tag.
-      </video>
-    </div>
+    
+<div class="video-banner">
+  <video class="full-video" src="./videos/gogreen.mp4" autoplay muted loop playsinline></video>
+</div>
+
     <script>
     // Dropdown toggle with viewport adjustment
     document.querySelectorAll('nav li').forEach(function (li) {
@@ -289,7 +302,7 @@
       <a href="./webpages/product_pages/cocopeat.html" title="Product 4" class="product-card">
         <img src="./images/Cocopeat.jpg" alt="Product 4" class="product-image">
         <div class="product-name">Cocopeat</div>
-        div>
+        <div>
         <div class="product-price">Npr 500</div>
         <div class="product-old-price">Npr 800</div>
     </div>
