@@ -34,6 +34,35 @@
         </li>
       </ul>
     </nav>
+    <script>
+    // Dropdown toggle with viewport adjustment
+    document.querySelectorAll('nav li').forEach(function (li) {
+      li.addEventListener('mouseenter', function () {
+        var dropdown = li.querySelector('ul');
+        if (dropdown) {
+          dropdown.style.display = 'block';
+          dropdown.style.left = '0';
+          dropdown.style.right = 'auto';
+          // Adjust position if cropped by the right edge
+          var rect = dropdown.getBoundingClientRect();
+          if (rect.right > window.innerWidth) {
+            dropdown.style.left = 'auto';
+            dropdown.style.right = '0';
+          }
+          // Adjust position if cropped by the left edge
+          if (rect.left < 0) {
+            dropdown.style.left = '0';
+            dropdown.style.right = 'auto';
+          }
+        }
+      });
+      li.addEventListener('mouseleave', function () {
+        var dropdown = li.querySelector('ul');
+        if (dropdown) dropdown.style.display = 'none';
+      });
+    });
+    // This script handles showing/hiding dropdown menus and ensures they stay within the viewport
+    </script>
 
     <div class="product-container">
       <div class="product-image">
