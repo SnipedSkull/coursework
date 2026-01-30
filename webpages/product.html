@@ -89,11 +89,19 @@ header {
     text-align: center;
 }
 
-/* Product price styling */
-.price {
-    font-weight: bold;
-    margin: 25px 0;
-    color: black;
+/* Product product-price styling */
+.product-price {
+    color: red;
+    font-weight: 600;
+    margin: 25px 0 30px;
+}
+
+.product-old-price {
+  text-decoration: line-through;
+  color: black;
+  font-weight: 600;
+  margin: 25px 0 30px;;
+
 }
 
 /* Button styling */
@@ -117,27 +125,39 @@ button:hover {
         <div class="product">
             <h2><img src="../images/chopsticks.jpg" alt="Product Image"></h2>
             <p>Chopsticks</p>
-            <p class="price">Npr 250</p>
+            <div>
+              <div class="product-price">Npr 250</div>
+              <div class="product-old-price">Npr 300</div>
+            </div>
             <button><a href="./product_pages/chopsticks.html">Buy Now</a></button>
         </div>
         <div class="product">
             <h2><img src="../images/bags.jpg" alt="Product Image"></h2>
             <p>Jute Bag</p>
-            <p class="price">Npr 300</p>
+            <div>
+              <div class="product-price">Npr 300</div>
+              <div class="product-old-price">Npr 500</div>
+            </div>
             <button><a href="./product_pages/bags.html">Buy Now</a></button>
         </div>
         <div class="product">
             <h2><img src="../images/basket.jpg" alt="Product Image"></h2>
             <p>Jute Basket</p>
-            <p class="price">Npr 1250</p>
+            <div>
+              <div class="product-price">Npr 1250</div>
+              <div class="product-old-price">Npr 1500</div>
+            </div>
             <button><a href="./product_pages/basket.html">Buy Now</a></button>
         </div>
 
         <div class="product">
             <h2><img src="../images/Cocopeat.jpg" alt="Product Image"></h2>
             <p>Cocopeat</p>
-            <p class="price">Npr 1000</p>
-            <button><a href="./product_pages/cocopeat.html">Buy Now</a></button>
+            <div>
+              <div class="product-price">Npr 500</div>
+              <div class="product-old-price">Npr 800</div>
+            </div>          
+        <button><a href="./product_pages/cocopeat.html">Buy Now</a></button>
         </div>
         <br>    
     </main>
@@ -146,27 +166,36 @@ button:hover {
         <div class="product">
             <h2><img src="../images/container.jpg" alt="Product Image"></h2>
             <p>Wooden Glass</p>
-            <p class="price">Npr 250</p>
-             <button><a href="./product_pages/container.html">Buy Now</a></button>
+            <div>
+              <div class="product-price">Npr 250</div>
+              <div class="product-old-price">Npr 300</div>
+            </div>              <button><a href="./product_pages/container.html">Buy Now</a></button>
         </div>
         <div class="product">
             <h2><img src="../images/flowepot.jpg" alt="Product Image"></h2>
             <p>Flower Pot</p>
-            <p class="price">Npr 500</p>
+             <div>
+              <div class="product-price">Npr 500</div>
+              <div class="product-old-price">Npr 900</div>
+            </div> 
             <button><a href="./product_pages/flowerpot.html">Buy Now</a></button>
         </div>
         <div class="product">
             <h2><img src="../images/forks.jpg" alt="Product Image"></h2>
             <p>Wooden Forks</p>
-            <p class="price">Npr 150</p>
+             <div>
+              <div class="product-price">Npr 150</div>
+              <div class="product-old-price">Npr 250</div>
+            </div> 
             <button><a href="./product_pages/forks.html">Buy Now</a></button>
-
         </div>
-
         <div class="product">
             <h2><img src="../images/vase.jpg" alt="Product Image"></h2>
             <p>Vase</p>
-            <p class="price">Npr 1500</p>
+             <div>
+              <div class="product-price">Npr 1500</div>
+              <div class="product-old-price">Npr 2500</div>
+            </div> 
             <button><a href="./product_pages/vase.html">Buy Now</a></button>
         </div>
         <br>    
